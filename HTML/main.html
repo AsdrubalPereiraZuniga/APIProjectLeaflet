@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/main.css">    
+    <h1 id="title">Map Leaflet API</h1>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/> <!--- archivo css del folleto principal de la API -->
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script><!--- archivo JavaScript del folleto principal de la API -->  
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/tomickigrzegorz/autocomplete@1.8.3/dist/css/autocomplete.min.css"
+    /><!--- archivo css para el autocompletado -->
+    <script src="https://cdn.jsdelivr.net/gh/tomickigrzegorz/autocomplete@1.8.3/dist/js/autocomplete.min.js"></script>
+    <!-- archivo .js para el manejo del autocompletado-->
+    <title>API Leaflet</title>
+</head>
+<body>    
+    <input type="text" id="search" autocomplete="off" placeholder="search places">
+    <div id="map"></div>        
+    <button id="btn_location" type="button" class="btn">My location</button>
+    <script src="/JavaScript/mainScript.js"></script>
+    <script src="/JavaScript/autocomplete.js"></script>
+</body>
+</html>
